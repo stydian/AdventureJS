@@ -3,6 +3,75 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.intro {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(32, 64, 78, 0.788);
+    transition: 3s;
+}
+
+.intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    text-align: center; 
+}
+
+.intro-header button {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.newGame {
+    display: block;
+    margin: 5px;
+    font-size: 18px;
+    background-color: burlywood;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.newGame:hover {
+    filter: drop-shadow(1px 2px 4px rgba(255, 255, 255, 1));
+}
+
+.localSaved {
+    display: block;
+    margin: 5px;
+    font-size: 18px;
+    background-color: burlywood;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.localSaved:hover {
+    filter: drop-shadow(1px 2px 4px rgba(255, 255, 255, 1));
+}
+
+#splash {
+    letter-spacing: 10px;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.4s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+
 body {
     padding: 0;
     margin: 0;
