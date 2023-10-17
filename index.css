@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: rgb(160, 131, 94);
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000000;
+    outline: none;
+}
+
+.button:hover {
+    border-color: #ffffff;
+    cursor: pointer;
+}
